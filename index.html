@@ -1,0 +1,93 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Encabezado con logo */
+        header {
+            background-color: #333;
+            padding: 10px 20px;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        /* Menú de botones */
+        .menu {
+            background-color: #f4f4f4;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .menu button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #ddd;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .menu button:hover {
+            background-color: #bbb;
+        }
+
+        /* Secciones */
+        section {
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado con logo -->
+    <header>
+        <img src="logo.png" alt="Logo">
+    </header>
+
+    <!-- Menú con botones -->
+    <div class="menu">
+        <a href="inicio.html"><button>Inicio</button></a>
+        <a href="luis.html"><button>Luis</button></a>
+        <a href="jessi.html"><button>Jessi</button></a>
+    </div>
+
+    <!-- Secciones -->
+    <section id="inicio">
+        <h2>Inicio</h2>
+        <p>Bienvenido a la sección de inicio.</p>
+    </section>
+
+    <section id="luis">
+        <h2>Luis</h2>
+        <p>Este es el contenido de Luis.</p>
+    </section>
+
+    <section id="jessi">
+        <h2>Jessi</h2>
+        <p>Este es el contenido de Jessi.</p>
+    </section>
+
+    <!-- Script para navegación -->
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
